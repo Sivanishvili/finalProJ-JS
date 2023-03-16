@@ -56,7 +56,7 @@ ul {
 }
 
 
-section {
+.section1 {
     /* border: 3px solid red; */
 }
 
@@ -166,3 +166,31 @@ section h1 {
 .icon{
     margin-right: 7px;
 }
+
+
+.pagination{
+    /* border: 3px solid green; */
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.prev{
+    border: 2px solid rgb(187, 182, 182);
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+}
+.page{
+    color: rgb(209, 200, 200);
+}
+.next{
+    border: 2px solid rgb(187, 182, 182);
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+}
+
