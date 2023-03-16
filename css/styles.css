@@ -69,10 +69,10 @@ main.list.item{
 } */
 
 section h1 {
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin: 60px 0 50px 10px;
     font-size: 30px;
     font-weight: bold;
+    /* border: 3px solid black; */
     
 }
 
@@ -85,24 +85,28 @@ section h1 {
 }
 
 .card {
-    border: 3px solid yellow;
     width: 32%;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+   
+    box-shadow: 3px 3px 8px 3px rgb(220, 222, 230);
+    border-radius: 10px;
     
 }
 
 .card img{
     width: 100%;
     height: 70%;
+    border-radius: 10px;
 }
 .cardtext{
-    border: 3px solid green;
+    /* border: 3px solid green; */
+    margin-left: 10px;
 }
 .card h2{
     color: blue;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     font-size: 12px;
 }
 
@@ -112,13 +116,17 @@ section h1 {
 
 }
 .card p{
-    margin-top: 7px;
+    margin-top: 10px;
     font-style: italic;
 }
 
 
 .bottomline{
-    border: 3px solid green;
+    /* border: 3px solid green; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    
 }
 .author{
     /* border: 3px solid black; */
@@ -129,20 +137,29 @@ section h1 {
 }
 .author img{
     margin-top: 5px;
-    width: 30%;
+    width: 35%;
     height: 35px;
 }
 
 .authortext{
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    font-weight: bold;
 }
 
 .author span{
     color: rgb(160, 160, 160);
    font-size: 12px;
     margin-top: 3px;
+}
 
+.secicons{
+    /* border: 3px solid black; */
+    margin-left: 160px;
+}
+
+.icon{
+    margin-right: 7px;
 }
