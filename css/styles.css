@@ -60,9 +60,13 @@ ul {
     font-size: 18px;
 }
 
+
+/* -------------------------------------------------------index html --------------------------------------------------- */
+
+
 /* ------------------------------ section ----------------------------- */
 
-.section1 {
+.section {
     /* border: 3px solid red; */
 }
 
@@ -248,4 +252,31 @@ footer img{
 
 .icons a{
     color: white;
+}
+
+
+
+
+/* ------------------------------------------------------ blog HTML -------------------------------------------------- */
+
+
+.section1{
+    /* border: 2px solid red; */
+    width: 40%;
+    color: rgb(25, 100, 150);
+    margin-left: 15px;
+   
+
+    
+}
+
+
+article{
+    border: 3px solid rgb(0, 0, 0);
+}
+
+article img{
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 15px;
 }
