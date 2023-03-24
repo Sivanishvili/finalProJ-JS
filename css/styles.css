@@ -28,6 +28,8 @@ header img {
 }
 
 
+
+
 nav {
     /* border: 3px solid green; */
     margin-left: 340px;
@@ -201,7 +203,7 @@ section h1 {
 .prev {
     border: 2px solid rgb(187, 182, 182);
     padding: 5px 10px 5px 10px;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 .page {
@@ -211,7 +213,7 @@ section h1 {
 .next {
     border: 2px solid rgb(187, 182, 182);
     padding: 5px 10px 5px 10px;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 /* ------------------ footer ------------------------------*/
