@@ -2,92 +2,122 @@
 
 
 
-@media(max-width:768px)
-{
+@media(max-width:768px) {
 
-/* ---------------------------------- header ------------------------------------------ */
-.personicon{
- 
-    display: inherit;
-}
-
-
-.cyrcle{
-    margin-left: 35%;
-}
-
-.hamburger {
-    display: block;
-    color: aliceblue;
-    cursor: pointer;
-
-}
-
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-
-
-.nav-menu {
-    overflow: hidden;
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #5a4e45;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-
-    /* border: 3ps solid red; */
-
-}
-
-.nav-menu.active {
-    left: 0;
-
-}
-
-
-.nav-item {
-    margin: 15px 0;
-
-}
-
-
-.login{
-    display: none;
-}
-.logintext{
-    display: none;
-}
-
-
-
-/* ------------------ section 1 ---------------------------------------------- */
-
-
-.cards{
-    /* border: 3px solid red; */
-    gap: 24px;
- 
-}
-
-.card{
-    width: 48%;
+    /* ---------------------------------- header ------------------------------------------ */
+header{
     /* border: 3px solid black; */
-    
+    /* justify-content: space-around; */
 }
+
+    .personicon {
+       display: inline;
+       margin-right: 20px;
+      
+
+    }
+
+
+    .logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       margin-right: 130px;
+        /* border: 3px solid green; */
+    }
+
+
+
+    .hamburger {
+        display: block;
+        color: aliceblue;
+        cursor: pointer;
+         /* border: 3px solid red; */
+
+    }
+
+    .bar {
+        /* border: 3px solid red; */
+        width: 50px;
+        height: 10px;
+        display: block;
+        background-color: rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(28, 50, 105);
+    }
+
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+    .nav-menu {
+        overflow: hidden;
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(31, 41, 48);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+        /* border: 3ps solid red; */
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+
+    }
+
+
+    .nav-item {
+        margin: 15px 0;
+
+    }
+
+
+    .login {
+        display: none;
+    }
+
+    .logintext {
+        display: none;
+    }
+
+
+
+
+
+    /* ------------------ section 1 ---------------------------------------------- */
+
+    
+
+
+
+    .cards {
+        /* border: 3px solid red; */
+        gap: 24px;
+
+    }
+
+    .card {
+        width: 48%;
+        /* border: 3px solid black; */
+
+    }
 
 
 }
@@ -98,61 +128,67 @@
 /* ---------------------------- mobile resolution -------------------------- */
 
 
-@media(max-width:480px){
+@media(max-width:480px) {
 
-
-
-    .card{
+    .logos {
+        display: flex;
+       margin-right: -150px;
+   
+        /* border: 3px solid green; */
+    }
+ 
+    .card {
         width: 98%;
     }
-    
-    
+
+
     /* ------ footer  ------------ */
-    
-    footer{
-    background-color: black;
-    padding-bottom: 0;
-    padding-top: 0;
+
+    footer {
+        background-color: black;
+        padding-bottom: 0;
+        padding-top: 0;
     }
-    
-    .left{
+
+    .left {
         width: 100%;
         display: flex;
         /* border: 3px solid white; */
         margin-left: 0px;
         margin-top: 0px;
-    
-    
-       
+
+
+
     }
-    .logo{
+
+    .logo {
         display: none;
-    
+
     }
-    
-    .first{
-        display: none;
-    }
-    
-    .third{
+
+    .first {
         display: none;
     }
-    
-    .icons{
+
+    .third {
         display: none;
     }
-    
-    .second{
+
+    .icons {
+        display: none;
+    }
+
+    .second {
         /* border: 3px solid red; */
-      margin: 0 auto;
-      width: 200%;
-      line-height: 40px;
-       
-       
+        margin: 0 auto;
+        width: 200%;
+        line-height: 40px;
+
+
     }
-    
-    
-    .second p{
+
+
+    .second p {
         display: flex;
         border-bottom: 1px solid white;
         justify-content: center;
