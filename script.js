@@ -1,5 +1,4 @@
 
-
 function setPage(pageNum) {
   const urlParams = new URLSearchParams(window.location.search);
   urlParams.set("page", pageNum);
@@ -76,34 +75,41 @@ const drawCard = (cardObj, wrapper) => {
   // description
   const description = document.createElement("div");
   description.classList.add("description");
-  description.innerHTML = cardObj.description;
   card.appendChild(description);
- 
-  // //description2
+
+
+
+  // learn 
   // const description2 = document.createElement("div");
   // description2.classList.add("description2");
   // description2.innerHTML = cardObj.description; // ToDo: description2 not provided in api
   // card.appendChild(description2);
  
-  // //svg
+  //svg
   // const img2 = document.createElement("img");
   // img2.src = cardObj.images[0]; // ToDo: img2 not provided in api
   // img2.classList.add("img2");
   // card.appendChild(img2);
  
-  // // name
+  // name
   // const name = document.createElement("div");
   // name.classList.add("name");
   // name.innerHTML = cardObj.name; // ToDo: name not provided in api
   // card.appendChild(name);
  
-  // //date
+  //date
   // const date = document.createElement("div");
   // date.classList.add("date");
   // date.innerHTML = cardObj.date; // ToDo: date not provided in api
   // card.appendChild(date);
+
+
+   // learn more button
+
+
 };
- 
+
+
 async function drawCards() {
   const wrapper = document.getElementById("cards");
   wrapper.innerHTML = "";
