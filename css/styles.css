@@ -155,15 +155,13 @@ section h1 {
 }
 
 
-/* .learnMore{
-    width: 25px;
-    font-size: 16px;
+/* 
+.button{
+    width: 40px;
+    height: 40px;
+    color: rgb(132, 100, 42);
     float: left;
-    color: white;
-
 } */
-
-
 
 .pagination {
     /* border: 3px solid rgb(83, 128, 0); */

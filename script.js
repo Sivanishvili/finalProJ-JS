@@ -4,6 +4,7 @@ const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click",() => {
     hamburger.classList.toggle("active");
+
     navMenu.classList.toggle("active");
 }
 )
@@ -91,32 +92,54 @@ const drawCard = (cardObj, wrapper) => {
   // learn 
   // const description2 = document.createElement("div");
   // description2.classList.add("description2");
-  // description2.innerHTML = cardObj.description; // ToDo: description2 not provided in api
+  // description2.innerHTML = cardObj.description; 
   // card.appendChild(description2);
  
   //svg
   // const img2 = document.createElement("img");
-  // img2.src = cardObj.images[0]; // ToDo: img2 not provided in api
+  // img2.src = cardObj.images[0]; 
   // img2.classList.add("img2");
   // card.appendChild(img2);
  
   // name
   // const name = document.createElement("div");
   // name.classList.add("name");
-  // name.innerHTML = cardObj.name; // ToDo: name not provided in api
+  // name.innerHTML = cardObj.name; /
   // card.appendChild(name);
  
   //date
   // const date = document.createElement("div");
   // date.classList.add("date");
-  // date.innerHTML = cardObj.date; // ToDo: date not provided in api
+  // date.innerHTML = cardObj.date; 
   // card.appendChild(date);
 
 
-   // learn more button
+  
+   //botton --------------------- ??????????
+
+//  const button = document.createElement("button");
+//  button.textContent = "Learn More";
+//  button.classList.add("order_btn");
+//         card.appendChild(button);
+//         cards.appendChild(card);
+//         button.addEventListener("click", function () {
+//           const buttonEndpoint = `https://dummyjson.com/products/${product.id}`;
+
+//           fetchbutton(buttonEndpoint);
+//         });
 
 
 };
+
+
+
+
+
+
+
+
+
+
 
 
 async function drawCards() {
