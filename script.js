@@ -1,4 +1,13 @@
 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click",() => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+)
+
 function setPage(pageNum) {
   const urlParams = new URLSearchParams(window.location.search);
   urlParams.set("page", pageNum);
@@ -168,3 +177,5 @@ function enableButton(elem) {
 }
  
 drawCards()
+
+

@@ -1,0 +1,161 @@
+/* ------------- tablet resolution ---------------- */
+
+
+
+@media(max-width:768px)
+{
+
+/* ---------------------------------- header ------------------------------------------ */
+.personicon{
+ 
+    display: inherit;
+}
+
+
+.cyrcle{
+    margin-left: 35%;
+}
+
+.hamburger {
+    display: block;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+.nav-menu {
+    overflow: hidden;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #5a4e45;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+
+    /* border: 3ps solid red; */
+
+}
+
+.nav-menu.active {
+    left: 0;
+
+}
+
+
+.nav-item {
+    margin: 15px 0;
+
+}
+
+
+.login{
+    display: none;
+}
+.logintext{
+    display: none;
+}
+
+
+
+/* ------------------ section 1 ---------------------------------------------- */
+
+
+.cards{
+    /* border: 3px solid red; */
+    gap: 24px;
+ 
+}
+
+.card{
+    width: 48%;
+    /* border: 3px solid black; */
+    
+}
+
+
+}
+
+
+
+
+/* ---------------------------- mobile resolution -------------------------- */
+
+
+@media(max-width:480px){
+
+
+
+    .card{
+        width: 98%;
+    }
+    
+    
+    /* ------ footer  ------------ */
+    
+    footer{
+    background-color: black;
+    padding-bottom: 0;
+    padding-top: 0;
+    }
+    
+    .left{
+        width: 100%;
+        display: flex;
+        /* border: 3px solid white; */
+        margin-left: 0px;
+        margin-top: 0px;
+    
+    
+       
+    }
+    .logo{
+        display: none;
+    
+    }
+    
+    .first{
+        display: none;
+    }
+    
+    .third{
+        display: none;
+    }
+    
+    .icons{
+        display: none;
+    }
+    
+    .second{
+        /* border: 3px solid red; */
+      margin: 0 auto;
+      width: 200%;
+      line-height: 40px;
+       
+       
+    }
+    
+    
+    .second p{
+        display: flex;
+        border-bottom: 1px solid white;
+        justify-content: center;
+        font-size: 16px;
+    }
+}

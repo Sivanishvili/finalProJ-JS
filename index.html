@@ -10,29 +10,44 @@
       src="https://kit.fontawesome.com/b64c1fd979.js"
       crossorigin="anonymous"
     ></script>
+   <link rel="stylesheet" href="css/resolutions.css">
+  
 
     <title>Home</title>
   </head>
   
   <body>
     <div class="container">
+
+
       <header>
-        <img src="images/logo.svg" alt="Logo" />
-        <img src="images/Logolototext.svg" alt="lototext" />
+        <img class="personicon" src="images/Person icon.svg" alt="">
+        <img class="cyrcle" src="images/logo.svg" alt="Logo" />
+        <img class="latana" src="images/Logolototext.svg" alt="lototext" />
 
         <nav>
-          <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <a href="blog.html"><li>Blog</li></a>
-            <li>Our story</li>
+          <ul class="nav-menu">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Menu</li>
+            <a href="blog.html"><li class="nav-item">Blog</li></a>
+            <li class="nav-item">Our story</li>
           </ul>
         </nav>
         <div class="login">
           <p class="logintext">Log in</p>
         </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          
+      </div>
+
       </header>
 
+      <script src="hamburger.js"></script>
       <section class="section">
         <h1>Latest news ..</h1>
 
@@ -67,6 +82,9 @@
         </div>
       </section>
 
+
+
+
       <footer>
         <div class="left">
           <div class="logo">
@@ -77,8 +95,8 @@
           <div class="first">
             <h1>Home</h1>
             <p>Discovery</p>
-            <p>Photos</p>
-            <p>Contact</p>
+            <p> Photos</p>
+            <p >Contact</p>
           </div>
 
           <div class="second">
@@ -92,11 +110,12 @@
             <p>Testimonials</p>
             <p>Advertise</p>
             <p>Integrations</p>
-            <p>Careers</p>
+            <p >Careers</p>
           </div>
         </div>
 
-        <div class="icons gaqroba2">
+        <div class="icons">
+
           <a href="https://www.instagram.com/" target="_blank"
             ><i class="fa-brands fa-instagram"></i
           ></a>
@@ -110,8 +129,10 @@
             ><i class="fa-solid fa-earth-americas"></i
           ></a>
         </div>
+
       </footer>
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>

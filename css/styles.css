@@ -23,6 +23,10 @@ header {
 
 }
 
+.personicon{
+    display: none;
+}
+
 header img {
     margin-left: 5px;
 }
@@ -107,7 +111,7 @@ section h1 {
     width: 32%;
     height: 500px;
     margin-bottom: 30px;
-    /* border: 1px solid red; */
+    /* border: 1px solid rgb(13, 31, 63); */
     background-color: rgb(90 113 161);
     box-shadow: 3px 3px 8px 3px rgb(220, 222, 230);
     border-radius: 10px;
@@ -242,6 +246,7 @@ footer img {
     gap: 20px;
     /* border: 3px solid rgb(40, 17, 100); */
     margin-right: 40px;
+    color: white;
 }
 
 .icons a {
@@ -444,8 +449,5 @@ footer img {
 .icon {
     margin-right: 7px;
 }
-
-
-
 
 
