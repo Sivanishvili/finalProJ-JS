@@ -112,7 +112,7 @@ const drawCard = (cardObj, wrapper) => {
  
  
  
-  //botton --------------------- ??????????
+  //botton --------------------- 
  
   const button = document.createElement("button");
   button.textContent = "Learn More .. ";
@@ -147,7 +147,7 @@ const showDetailViewAndHideMainPage = (product) => {
  ${product.title}
 </h1>
 
-<p>
+<p class= category>
  Category: ${product.category}
  <br>
  Brand: ${product.brand}
