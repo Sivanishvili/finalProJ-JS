@@ -1,14 +1,11 @@
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click",() => {
-    hamburger.classList.toggle("active");
-
-    navMenu.classList.toggle("active");
-}
-)
-
+ 
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+ 
 function setPage(pageNum) {
   const urlParams = new URLSearchParams(window.location.search);
   urlParams.set("page", pageNum);
@@ -86,9 +83,9 @@ const drawCard = (cardObj, wrapper) => {
   const description = document.createElement("div");
   description.classList.add("description");
   card.appendChild(description);
-
-
-
+ 
+ 
+ 
   // learn 
   // const description2 = document.createElement("div");
   // description2.classList.add("description2");
@@ -112,31 +109,23 @@ const drawCard = (cardObj, wrapper) => {
   // date.classList.add("date");
   // date.innerHTML = cardObj.date; 
   // card.appendChild(date);
-
-
-  
-   //botton --------------------- ??????????
-
-//  const button = document.createElement("button");
-//  button.textContent = "Learn More";
-//  button.classList.add("order_btn");
-//         card.appendChild(button);
-//         cards.appendChild(card);
-//         button.addEventListener("click", function () {
-//           const buttonEndpoint = `https://dummyjson.com/products/${product.id}`;
-
-//           fetchbutton(buttonEndpoint);
-//         });
-
-
+ 
+ 
+ 
+  //botton --------------------- ??????????
+ 
+  const button = document.createElement("button");
+  button.textContent = "Learn More .. ";
+  button.classList.add("order_btn");
+  card.appendChild(button);
+  cards.appendChild(card);
+  button.addEventListener("click", async function (c) {
+    const result = await fetch(`https://dummyjson.com/products/${cardObj.id}`);
+    const product = await result.json()
+    console.log(product) // Do something with the product
+  });
 };
-
-
-
-
-
-
-
+ 
 
 
 
@@ -187,7 +176,6 @@ function validatePaginationButtons(result) {
   } else {
     enableButton(nextPageButton)
   }
- 
 }
  
 function disableButton(elem) {
@@ -196,9 +184,6 @@ function disableButton(elem) {
  
 function enableButton(elem) {
   elem.style.pointerEvents = "auto";
- 
 }
  
 drawCards()
-
-

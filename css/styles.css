@@ -156,14 +156,16 @@ section h1 {
 }
 
 
-/* 
-.button{
-    width: 40px;
-    height: 40px;
-    color: rgb(132, 100, 42);
-    float: left;
-} */
 
+
+button{
+    color: rgb(241, 241, 241);
+    background-color: #423e92;
+    margin-left: 340px;
+    margin-top: 15px;
+    cursor: pointer;
+    height: 25px;
+}
 .pagination {
     /* border: 3px solid rgb(83, 128, 0); */
     display: flex;
