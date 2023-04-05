@@ -54,7 +54,7 @@
       </header>
 
       <script src="hamburger.js"></script>
-      <section class="section">
+      <section id="main-view" class="section">
         <h1>Latest news ..</h1>
 
         <div class="cards" id="cards">
@@ -82,16 +82,22 @@
 
         
 
+            <div class="pagination">
+              <div class="prev">prev</div>
+              <div class="page">page<span class="page"></span></div>
+              <div class="next">next</div>
+            </div>
+          </section>
+          
+
+      <section id="detail-view" class="d-none">
+        <div id="detail-view-content">
         </div>
-        <div class="pagination">
-          <div class="prev">prev</div>
-          <div class="page">page<span class="page"></span></div>
-          <div class="next">next</div>
-        </div>
+        <button id="backToMainPage">Back To Main Page</button>
       </section>
 
-
-
+    </div>
+    
 
       <footer>
         <div class="left">

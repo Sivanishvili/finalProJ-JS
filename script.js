@@ -122,10 +122,57 @@ const drawCard = (cardObj, wrapper) => {
   button.addEventListener("click", async function (c) {
     const result = await fetch(`https://dummyjson.com/products/${cardObj.id}`);
     const product = await result.json()
-    console.log(product) // Do something with the product
+    showDetailViewAndHideMainPage(product)
   });
 };
  
+
+
+
+
+const showDetailViewAndHideMainPage = (product) => {
+
+  document.getElementById('main-view').classList.add('d-none');
+
+
+
+  const detailView = document.getElementById('detail-view-content');
+
+  let images = '';
+  product.images.forEach(image => {
+    images += `<img class="detail-image"  src="${image}" alt="">`
+  })
+
+  detailView.innerHTML = ` <h1 class="detail-title">
+ ${product.title}
+</h1>
+
+<p>
+ Category: ${product.category}
+ <br>
+ Brand: ${product.brand}
+ <br>
+ Discount Percentage: ${product.discountPercentage}
+ <br>
+ Rating: ${product.rating}
+ <br>
+ Stock: ${product.stock}
+</p>
+
+<img class="detail-thumbnail" src="${product.thumbnail}" alt="">
+
+<p class="detail-desc">${product.description}</p>
+
+<div class="images">
+
+${images}
+</div>
+`
+
+document.getElementById('detail-view').classList.remove('d-none');
+
+
+}
 
 
 
@@ -187,3 +234,10 @@ function enableButton(elem) {
 }
  
 drawCards()
+
+
+document.getElementById('backToMainPage').addEventListener('click',() => {
+  document.getElementById('detail-view').classList.add('d-none');
+  document.getElementById('main-view').classList.remove('d-none');
+
+})
